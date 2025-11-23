@@ -96,3 +96,62 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+# API CRUD com NestJS
+
+Esta API permite criar, atualizar, deletar e listar posts.
+
+## Instalação
+
+```bash
+npm install
+```
+
+## Execução
+
+Modo desenvolvimento (auto-reload):
+```bash
+npm run start:dev
+```
+
+Modo produção:
+```bash
+npm run start:prod
+```
+
+## Endpoints
+
+- **GET /api/list**
+  - Retorna mensagem de teste.
+
+- **POST /api/create**
+  - Cria um post.
+  - Corpo JSON:
+    ```json
+    {
+      "title": "Título",
+      "content": "Conteúdo"
+    }
+    ```
+
+- **PUT /api/update/:id**
+  - Atualiza um post pelo id.
+  - Corpo JSON:
+    ```json
+    {
+      "title": "Novo título",
+      "content": "Novo conteúdo"
+    }
+    ```
+
+- **DELETE /api/delete/:id**
+  - Deleta um post pelo id.
+
+## Testes
+
+```bash
+npm run test
+```
+
+---
+Feito com [NestJS](https://nestjs.com)
